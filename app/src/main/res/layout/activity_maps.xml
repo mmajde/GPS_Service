@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maps" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/map"
+        tools:context="software.pama.testservice.MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textAlignment="center"
+        android:textSize="48dp"
+        android:layout_margin="20dp"
+        android:text="0 m"
+        android:id="@+id/txtDistance"
+        android:layout_gravity="top"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run Service"
+        android:id="@+id/btnRunService"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw Track"
+        android:id="@+id/btnDrawTrack"
+        android:layout_below="@+id/btnRunService"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Distance"
+        android:id="@+id/btnGetDistance"
+        android:layout_below="@+id/btnRunService"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp" />
+
+</FrameLayout>
